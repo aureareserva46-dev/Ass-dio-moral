@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Como Denunciar Assédio Moral</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2e6ff;
+      color: #4b0082;
+      padding: 20px;
+      line-height: 1.6;
+    }
+    h1, h2 {
+      color: #800080;
+      text-align: center;
+    }
+    .step {
+      background-color: #ffffff;
+      border-radius: 10px;
+      padding: 15px;
+      margin: 10px 0;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .step:hover {
+      background-color: #e0ccff;
+    }
+    .content {
+      display: none;
+      margin-top: 10px;
+      padding: 10px;
+      background-color: #f9f0ff;
+      border-radius: 8px;
+    }
+    .btn {
+      background-color: #9b59b6;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      text-decoration: none;
+      cursor: pointer;
+      margin: 5px;
+      display: inline-block;
+    }
+    .btn:hover {
+      background-color: #7d3c98;
+    }
+  </style>
+</head>
+<body>
+  <h1>Espaço Seguro: Denuncie Assédio Moral</h1>
+  <p>Esta página ensina como agir diante do assédio moral e oferece links interativos para materiais educativos e denúncia.</p>
+
+  <div class="step" onclick="toggleContent(0)">
+    <h2>1. Reconheça o Assédio</h2>
+    <div class="content">
+      <p>Assédio moral é toda ação repetitiva que humilha, intimida ou desqualifica um colaborador. Observe comportamentos como:</p>
+      <ul>
+        <li>Comentários ofensivos ou humilhantes</li>
+        <li>Isolamento ou exclusão do grupo de trabalho</li>
+        <li>Atribuição de tarefas impossíveis ou injustas</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="step" onclick="toggleContent(1)">
+    <h2>2. O que Fazer</h2>
+    <div class="content">
+      <ul>
+        <li>Mantenha registros: emails, prints e datas importantes.</li>
+        <li>Procure colegas de confiança para apoio.</li>
+        <li>Entre em contato com o RH ou canal de denúncia da empresa.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="step" onclick="toggleContent(2)">
+    <h2>3. Como Denunciar</h2>
+    <div class="content">
+      <p>Você pode denunciar pelo telefone, e-mail ou formulário online:</p>
+      <ul>
+        <li>Telefone do RH: <strong>(11) 99999-9999</strong></li>
+        <li>E-mail: <strong>denuncia@empresa.com</strong></li>
+        <li>Formulário seguro: <a href="https://forms.gle/seuformulario" target="_blank" class="btn">Abrir Formulário</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="step" onclick="toggleContent(3)">
+    <h2>4. Material Educativo</h2>
+    <div class="content">
+      <p>Para entender mais sobre assédio e direitos do trabalhador:</p>
+      <a href="https://www.institutoexemplo.org/educacao" target="_blank" class="btn">Acessar Material</a>
+    </div>
+  </div>
+
+  <script>
+    function toggleContent(index){
+      const contents = document.querySelectorAll('.content');
+      contents[index].style.display = contents[index].style.display === 'block' ? 'none' : 'block';
+    }
+  </script>
+</body>
+</html>
